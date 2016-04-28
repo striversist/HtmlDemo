@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Test</title>
+    <style type="text/css">
+        table.empty{
+            width:350px;
+            border-collapse:separate;
+            empty-cells:hide;
+        }
+        td.empty{
+            padding:5px;
+            border-style:solid;
+            border-width:1px;
+            border-color:#999999;
+        }
+        .scroll{
+            display:block;
+            border: 1px solid red;
+            padding:5px;
+            margin-top:5px;
+            width:300px;
+            height:50px;
+            overflow:scroll;
+        }
+        .auto{
+            display:block;
+            border: 1px solid red;
+            padding:5px;
+            margin-top:5px;
+            width:300px;
+            height:50px;
+            overflow:auto;
+        }
+        #table02 {
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+        #table02 th {
+            text-align: left;
+            padding: 5px;
+            background-color: #eee;
+        }
+        #table02 td {
+            padding: 5px;
+        }
+        #ul01 {
+            list-style: none;
+            padding: 0;
+        }
+        #ul01 li {
+            line-height: 14px;
+            background: #eee;
+        }
+        #ul01 li a {
+            display: block;
+            background: url("img/list-icon.png") no-repeat 0 9px;
+            border-bottom: 1px dotted #bbb;
+            padding: 8px 17px;
+            text-decoration: none;
+            color: black;
+        }
+        #ul01 li:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body style="">
+
+<table class="empty">
+    <tr>
+        <th></th>
+        <th>Title one</th>
+        <th>Title two</th>
+    </tr>
+
+    <tr>
+        <th>Row Title</th>
+        <td class="empty">value</td>
+        <td class="empty">value</td>
+    </tr>
+
+    <tr>
+        <th>Row Title</th>
+        <td class="empty">value</td>
+        <td class="empty"></td>
+    </tr>
+</table>
+<hr/>
+
+<p>Example of scroll value:</p>
+<div class="scroll">
+    I am going to keep lot of content here just to show you how scrollbars works if there is an overflow in an
+    element box. This provides your horizontal as well as vertical scrollbars.
+</div>
+<br />
+
+<p>Example of auto value:</p>
+
+<div class="auto">
+    I am going to keep lot of content here just to show you how scrollbars works if there is an overflow in an element box.
+    This provides your horizontal as well as vertical scrollbars.
+</div>
+<hr/>
+
+<table id="table02" border="1">
+    <tr>
+        <th>Value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>visible</td>
+        <td>The box and its contents are shown to the user.</td>
+    </tr>
+    <tr>
+        <td>hidden</td>
+        <td>The box and its content are made invisible, although they still affect the layout of the page.</td>
+    </tr>
+    <tr>
+        <td>collapse</td>
+        <td>This is for use only with dynamic table columns and row effects.</td>
+    </tr>
+</table>
+<hr/>
+
+<ul id="ul01">
+    <li><a href="">China</a></li>
+    <li><a href="">Europe</a></li>
+    <li><a href="">Asia</a></li>
+    <li><a href="">America</a></li>
+</ul>
+
+</body>
+</html>
