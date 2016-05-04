@@ -64,6 +64,29 @@
         #ul01 li:hover {
             background: #ddd;
         }
+        #div01 {
+            display: block;
+            border: 1px solid greenyellow;
+            width: 50%;
+            margin: auto;
+        }
+        #div01 p {
+            border: 1px solid black;
+            text-align: center;
+        }
+        #div01 p:before {
+            border: 1px solid red;
+            content: url("img/list-icon.png");
+            position: relative;
+            top: 5px;
+        }
+        #div02 p {
+            border: 1px solid #eee;
+            position: absolute;
+            /*left: 0;*/
+            /*top: 0;*/
+            background-color: yellow;
+        }
     </style>
 </head>
 <body style="">
@@ -130,6 +153,14 @@
     <li><a href="">Asia</a></li>
     <li><a href="">America</a></li>
 </ul>
+<hr/>
+
+<div id="div01">
+    <p>in center</p>
+</div>
+<div id="div02">
+    <p>text text text</p>
+</div>
 
 </body>
 </html>
