@@ -144,8 +144,21 @@ ul#menu li {
 
 ul#subscribe li {
     padding-bottom: 5px;
+    padding-left: 28px;
 }
 
 ul#subscribe li a {
     font-size: 16px;
+}
+
+li#rss {
+    background: url("images/rss_icon.jpg") no-repeat;
+}
+
+li#email {
+    background: url("images/email_icon.jpg") no-repeat;
+}
+
+li#twitter {
+    background: url("images/twitter_icon.jpg") no-repeat;
 }
