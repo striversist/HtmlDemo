@@ -11,3 +11,21 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, img {
     margin: 0;
     padding: 0;
 }
+
+#main {
+    background: url("images/header_slice.png") repeat-x;
+}
+
+#main .container {
+    background: url("images/header.jpg") no-repeat;
+}
+
+#logo {
+    background: url("images/logo.png") no-repeat;
+    width: 235px;
+    height: 84px;
+}
+
+#logo h1 {
+    text-indent: -9999px;
+}
