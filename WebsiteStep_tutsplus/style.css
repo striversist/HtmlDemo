@@ -24,8 +24,24 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, img {
     background: url("images/logo.png") no-repeat;
     width: 235px;
     height: 84px;
+    float: left;
 }
 
 #logo h1 {
     text-indent: -9999px;
+}
+
+#header {
+    padding-top: 30px;
+}
+
+#tagline {
+    float: left;
+}
+
+#tagline h3 {
+    font-size: 30px;
+    color: #e4dfdf;
+    padding-top: 10px;
+    padding-left: 10px;
 }
