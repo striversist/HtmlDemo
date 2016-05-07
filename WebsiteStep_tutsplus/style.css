@@ -121,7 +121,7 @@ ul#menu li {
     margin-top: 35px;
     background: #d4d6d3;
     border: 1px solid #bebebe;
-    padding: 15px;
+    padding: 15px 15px 30px 15px;
 }
 
 #sidebar h3 {
@@ -161,4 +161,11 @@ li#email {
 
 li#twitter {
     background: url("images/twitter_icon.jpg") no-repeat;
+}
+
+a.button {
+    color: #393838;
+    text-decoration: none;
+    background: url("images/button_slice.png") repeat-x;
+    padding: 10px 20px;
 }
