@@ -19,7 +19,7 @@ figcaption {
 
 img {
     display: block;
-    max-height: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -34,4 +34,16 @@ li {
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
+}
+
+@media screen and (min-width: 1024px) {
+    li {
+        width: 25%;
+    }
+    li:nth-of-type(3n+1) {
+        clear: none;
+    }
+    li:nth-of-type(4n+1) {
+        clear: left;
+    }
 }
