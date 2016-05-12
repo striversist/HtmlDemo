@@ -46,3 +46,19 @@ li::before {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
+
+h4 {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h4:after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: white;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
