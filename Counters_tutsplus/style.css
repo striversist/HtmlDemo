@@ -1,0 +1,48 @@
+ol, li, p, h4 {
+    margin: 0;
+}
+
+body {
+    background: #fbf10f;
+    max-width: 80%;
+    width: 500px;
+    margin: 40px auto;
+    font: normal 16px/24px "Monsterrat", "Helvetica Neue", sans-serif;
+}
+
+ol {
+    counter-reset: section;
+}
+
+li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 30px;
+    margin-bottom: 15px;
+    background: #0e0fee;
+    color: #fff;
+    position: relative;
+}
+
+li::before {
+    content: counter(section);
+    counter-increment: section;
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 12px;
+
+    border: 2px solid #000;
+    display: inline-block;
+    /* 注：li需要设置relative, 否则这个li:before元素是相对于body，会超出可视范围 */
+    position: absolute;
+    left: -65px;
+    /* 圆形顶点移到父元素中心高度 */
+    top: 50%;
+    /* 移动确保圆心在中心位置 */
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
