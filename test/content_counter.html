@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+    <style rel="stylesheet">
+        body {
+            counter-reset: mysection;
+        }
+        h1 {
+            counter-reset: mysubsection;
+        }
+        h1:before {
+            content: counter(mysection) ". ";
+            counter-increment: mysection;
+        }
+        h2:before {
+            content: counter(mysection) "." counter(mysubsection) ". ";
+            counter-increment: mysubsection;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Project summary</h1>
+<h2>Structure</h2>
+<h2>Flow</h2>
+
+<h1>Project Detail</h1>
+<h2>Detail1</h2>
+<h2>Detail2</h2>
+
+</body>
+</html>
